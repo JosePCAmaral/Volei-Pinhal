@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: grafite;
-    src: url(../fonts/adrip1.ttf);
+    src: url(../fonts/adrip1.ttf) format('truetype');
 }
 
 body, html {
@@ -10,39 +10,62 @@ body, html {
     padding: 0;
     width: 100%;
     height: 100%;
+    font-family: Arial, sans-serif;
 }
 
+/* HEADER COM FLEXBOX */
 header {
+    height: 15%;
+    width: 100%;
     position: relative;
-    height: 10%;
+}
+
+.up {
     background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 20px;
+    height: 75%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    position: relative;
 }
 
-header > img {
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    top: 50%;
-    left: 8%;
-    transform: translate(-50%, -50%);
+.down {
+    background-color: rgb(184, 184, 184);
+    height: 25%;
+    position: relative;
+    z-index: 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-header > h1 {
-    position: absolute;
-    margin: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 50px;
-    font-family: grafite;
+/* LOGO */
+header img {
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+}
+
+/* TÍTULO */
+header h1 {
+    font-size: 55px;
+    font-family: grafite, sans-serif;
     color: rgb(128, 250, 34);
+    text-align: center;
+    flex-grow: 1;
+    padding-right: 20px;
 }
 
-header > span {
+/* ÍCONE MENU */
+.menu-icon {
     color: rgb(128, 250, 34);
-    position: absolute;
-    top: 50%;
-    right: 5%;
-    transform: translate(0, -50%);
     font-size: 70px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.menu-icon:hover {
+    transform: scale(1.1);
 }
