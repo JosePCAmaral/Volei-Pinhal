@@ -12,11 +12,15 @@ body {
     text-align: center;
 }
 header {
-    background-color: #0f0;
+    background-color: #444;
     padding: 20px;
 }
 .logo {
-    max-width: 150px;
+    max-width: 200px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 nav {
     margin-top: 10px;
@@ -43,6 +47,7 @@ footer {
     padding: 10px;
     text-align: center;
     margin-top: 20px;
+    height: 2000px;
 }
 @media (max-width: 768px) {
     nav a {
