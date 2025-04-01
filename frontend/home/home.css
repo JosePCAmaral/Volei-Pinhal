@@ -57,8 +57,8 @@ header {
 .redes-sociais-left{
     width: 50%;
     font-size: 30px;
-    padding-top: 30px;
-    padding-left: 10%;
+    padding-top: 40px;
+    padding-left: 5%;
 }
 
 .redes-sociais-left > a{
@@ -73,8 +73,8 @@ header {
 .redes-sociais-right{
     width: 50%;
     font-size: 30px;
-    padding-top: 30px;
-    padding-right: 10%;
+    padding-top: 40px;
+    padding-right: 5%;
     text-align: right;
 }
 
