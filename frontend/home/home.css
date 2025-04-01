@@ -1,35 +1,102 @@
-body {
+html, body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #222;
     color: #fff;
+    width: 100%;
+    height: 100%;
 }
+
 .container {
     width: 90%;
     max-width: 1200px;
     margin: auto;
     text-align: center;
 }
+
 header {
     background-color: #444;
-    padding: 20px;
+    height: 19%;
+}
+
+.menu-search{
+    height: 20%;
+    display: flex;
+}
+
+.searchBar{
+    width: 50%;
+    padding-top: 20px;
+    padding-left: 5%;
+}
+
+.menuBotton{
+    width: 50%;
+    padding-top: 20px;
+    padding-right: 5%;
+    text-align: right;
+}
+
+.searchBar > span, .menuBotton > span{
+    font-size: 25px;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.searchBar > span:hover, .menuBotton > span:hover{
+    color:#62FF00;
+    transform: scale(1.1);
+}
+
+.nav{
+    height: 60%;
+    display: flex;
+}
+
+.redes-sociais-left{
+    width: 50%;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-left: 10%;
+}
+
+.redes-sociais-left > a{
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.redes-sociais-left > a:hover {
+    color: #62FF00; 
+}
+
+.redes-sociais-right{
+    width: 50%;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-right: 10%;
+    text-align: right;
+}
+
+.redes-sociais-right > a{
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.redes-sociais-right > a:hover {
+    color: #62FF00; 
+}
+
+.games{
+    height: 20%;
+    background-color: #111;
 }
 .logo {
     max-width: 200px;
     position: absolute;
-    top: 10%;
+    top: 8%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-nav {
-    margin-top: 10px;
-}
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
 }
 .hero {
     background-color: #444;
@@ -37,7 +104,7 @@ nav a {
     margin-top: 20px;
 }
 .hero h1 {
-    color: #0f0;
+    color: #62FF00;
 }
 .content {
     padding: 20px;
@@ -48,10 +115,4 @@ footer {
     text-align: center;
     margin-top: 20px;
     height: 2000px;
-}
-@media (max-width: 768px) {
-    nav a {
-        display: block;
-        margin: 10px 0;
-    }
 }
